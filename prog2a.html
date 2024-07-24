@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: 0;
+        }
+        form {
+            background-color: yellowgreen;
+            border: 3px solid #333333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Feedback Form</h1>
+        <form action="">
+            <input type="text" name="fname" placeholder="Enter your name"><br />
+            <input type="email" name="femail" placeholder="Enter your email"><br />
+            <input type="text" name="usn" placeholder="Enter your USN"><br />
+            <input type="checkbox" name="send" checked>Send copy of feedback to mail</input><br><br>
+            <label for="semester"><br />Semester:</label>
+            <select name="semester">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br><br>
+            Branch:<br>
+            <input type="radio" name="branch" value="CS" id="cs"><label for="cs">CS</label><br>
+            <input type="radio" name="branch" value="IS" id="is"><label for="is">IS</label><br>
+            <input type="radio" name="branch" value="ECE" id="ece"><label for="ece">ECE</label><br>
+            <input type="radio" name="branch" value="MECH" id="mech"><label for="mech">MECH</label><br>
+            <input type="radio" name="branch" value="CIVIL" id="civil"><label for="civil">CIVIL</label><br><br>
+            <textarea name="feedback" rows="5" cols="30" placeholder="Type Here"></textarea><br>
+            <input type="submit" value="Submit" onclick="alert('Response Recorded')">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
